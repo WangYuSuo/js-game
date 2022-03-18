@@ -1,1 +1,6 @@
-图形绘制是Canvas中最基本的内容，但是Canvas本身提供的api比较基础，开发起来低效。而且也缺少完整的事件系统、区域监测、缓存等等。下面让我们这个来看几款高效的图形处理库吧
+# 28个高效动画工具 https://juejin.cn/post/7038267477121302542#comment
+# canvas
+1、Konva是一个 HTML5 Canvas JavaScript 框架, 通过扩展 Canvas 的 2D Context 让桌面端和移动端Canvas支持交互性，使其支持高性能动画、过渡、节点嵌套、分层、过滤、缓存、事件处理等等。Konva传送门https://konvajs.org/docs/sandbox/index.html
+
+# 1、canvas 实现计时表；timer.html
+# 2、canvas 实现刮刮卡；cards.html
