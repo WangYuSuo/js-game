@@ -4,4 +4,4 @@
 
 # 1、canvas 实现计时表；timer.html
 # 2、canvas 实现刮刮卡；cards.html
-# 3、canvas 实现贪吃蛇；
+# 3、canvas 实现贪吃蛇，贪吃虫；
