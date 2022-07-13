@@ -5,39 +5,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>虎哥客</title>
-  <style>
-    body {
-      margin: 0;
-    }
-
-    .content {
-      height: 85vh;
-    }
-
-    footer {
-      width: 100%;
-      padding: 50px;
-      background: #333333;
-      text-align: center;
-    }
-
-    a {
-      color: #999999;
-    }
-  </style>
+  <link rel="icon" href="./logoicn.png">
+  <title>Lia虎</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" href="./src/assect/css/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  <script src="./src/assect/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 </head>
 
 <body>
-  <div class="content">
-    <img src="./hug.jpeg" alt="">
+  <div class="body-content">
+    <div class="menu-box">
+      <h1 class="animate__animated animate__heartBeat">欢迎！欢迎👏</h1>
+      <img class="tiger_img" src="./src/assect/imgs/hug.jpeg" alt="">
+      <p onclick="showmodal()">
+        » 
+        <a href="javascript:void(0);">网络日志（Yusuo Blog）</a>
+      </p>
+      <p>
+        » 
+        <a href="src/pages/snake.html">Lia虎解压（Js Games）</a>
+      </p>
+    </div>
   </div>
-  <footer>
-    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402012504" target="_blank">
-      <img src="./gongan-ico.png" /> 京公网安备 11011402012504号
+  <footer class="body-foot">
+    <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402012504" target="_blank">
+      <img src="./src/assect/imgs/gongan-ico.png" /> 京公网安备 11011402012504号
     </a> &nbsp; &nbsp; 
     <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2022009598号</a>
   </footer>
 </body>
-
 </html>
+<script>
+  $(".body-content").css("background-image","url(./src/assect/imgs/index_bg.jpeg)");
+  function showmodal() {
+    $.confirm({
+      title: 'Sorry!',
+      icon: 'glyphicon glyphicon-heart',
+      content: '攻城狮,加班升级中...',
+      type: 'red',
+      backgroundDismiss: true,
+      typeAnimated: true,
+      buttons: {
+          tryAgain: {
+              text: '朕知道了.',
+              btnClass: 'btn-red',
+              action: function(){
+              }
+          },
+      }
+    });
+  }
+</script>

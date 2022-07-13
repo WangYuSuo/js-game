@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>小宝贝 Forever&Love</title>
+
+    <style type="text/css">
+        html {
+            /* background:linear-gradient(#fc0 0%,#F80 80%); */
+            background: url('../forever.jpg') no-repeat bottom;
+            background-size: 100% 100%;
+            height: 100%;
+        }
+
+        .wrap {
+            width: 650px;
+            height: 300px;
+            margin: 150px 360px;
+            position: relative;
+
+        }
+
+        .cube {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg) rotateY(-80deg);
+            -webkit-animation: rotate 20s infinite;
+            animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes rotate {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        .cube div {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            opacity: 0.8;
+            transition: all .4s;
+        }
+
+        .pic {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cube .out_front {
+            transform: rotateY(0deg) translateZ(150px);
+        }
+
+        .cube .out_back {
+            transform: translateZ(-150px) rotateY(180deg);
+        }
+
+        .cube .out_left {
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .cube .out_right {
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+
+        .cube .out_top {
+            transform: rotateX(90deg) translateZ(150px);
+        }
+
+        .cube .out_bottom {
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+
+        .cube span {
+            display: bloack;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .cube .in_pic {
+            width: 100px;
+            height: 100px;
+        }
+
+        .cube .in_front {
+            transform: rotateY(0deg) translateZ(50px);
+        }
+
+        .cube .in_back {
+            transform: translateZ(-50px) rotateY(180deg);
+        }
+
+        .cube .in_left {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .cube .in_right {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        .cube .in_top {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .cube .in_bottom {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+
+        .cube:hover .out_front {
+            transform: rotateY(0deg) translateZ(300px);
+        }
+
+        .cube:hover .out_back {
+            transform: translateZ(-300px) rotateY(180deg);
+        }
+
+        .cube:hover .out_left {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+
+        .cube:hover .out_right {
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+
+        .cube:hover .out_top {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+
+        .cube:hover .out_bottom {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+        /* 鼠标效果 */
+		
+    </style>
+</head>
+
+<body>
+    <!--/*外层最大容器*/-->
+    <div class="wrap">
+        <!--    /*包裹所有元素的容器*/-->
+        <div class="cube">
+            <!--前面图片 -->
+            <div class="out_front">
+                <img src="../111.jpg" class="pic">
+            </div>
+            <!--后面图片 -->
+            <div class="out_back">
+                <img src="../222.jpg" class="pic">
+            </div>
+            <!--左图片 -->
+            <div class="out_left">
+                <img src="../333.jpg" class="pic">
+            </div>
+            <div class="out_right">
+                <img src="../444.jpg" class="pic">
+            </div>
+            <div class="out_top">
+                <img src="../555.jpeg" class="pic">
+            </div>
+            <div class="out_bottom">
+                <img src="../666.jpeg" class="pic">
+            </div>
+            <!--小正方体 -->
+            <span class="in_front">
+                <img src="../777.jpeg" class="in_pic">
+            </span>
+            <span class="in_back">
+                <img src="../888.jpeg" class="in_pic">
+            </span>
+            <span class="in_left">
+                <img src="../999.jpeg" class="in_pic">
+            </span>
+            <span class="in_right">
+                <img src="../101.jpeg" class="in_pic">
+            </span>
+            <span class="in_top">
+                <img src="../102.jpeg" class="in_pic">
+            </span>
+            <span class="in_bottom">
+                <img src="../106.jpeg" class="in_pic">
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

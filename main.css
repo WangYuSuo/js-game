@@ -1,0 +1,90 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.body-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* height: calc(100vh - 168px); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.animate__animated{
+  color: #fefefe;
+  text-align: center;
+}
+
+.menu-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 1.5em;
+  padding: 1em;
+  width: auto;
+  min-width: 356px;
+  height: auto;
+  cursor:pointer;
+}
+
+.tiger_img{
+  border-radius: 25px;
+}
+
+.menu-box p{
+  width: calc(100% - 2rem);
+  margin: 0;
+  margin-top: 1em;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  line-height: 180%;
+  color: #fefefe;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0.5em;
+  text-shadow: 0 1px 1px #333;
+}
+
+.menu-box p:hover{
+  background: #fefefe;
+  color: #222;
+}
+
+.menu-box p a{
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.menu-box p:hover a{
+  color: #222;
+}
+
+.body-foot {
+  display: none;
+  width: 100%;
+  max-height: 168px;
+  padding: 50px 0;
+  background: #333333;
+  text-align: center;
+}
+
+.body-foot a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}
+
+.body-foot a img{
+  margin-right: 5px;
+}

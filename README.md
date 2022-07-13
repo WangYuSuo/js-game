@@ -5,3 +5,5 @@
 # 1、canvas 实现计时表；timer.html
 # 2、canvas 实现刮刮卡；cards.html
 # 3、canvas 实现贪吃蛇，贪吃虫；
+# 4、postMan 使用教程、汉化中文；
+# 5、apache 环境配置、https设置；
